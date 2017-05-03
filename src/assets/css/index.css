@@ -1,0 +1,14 @@
+@import 'general.css';
+
+
+
+.outer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-self: center;
+	width: 1152px;
+	height: 1152px;
+}
