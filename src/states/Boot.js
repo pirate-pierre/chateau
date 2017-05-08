@@ -22,6 +22,9 @@ export default class Boot extends Phaser.State {
     // Disable clearing the canvas on each tick (usually not needed).
     this.game.clearBeforeRender = false;
 
+    this.scale.setGameSize(128*9, 128*9);
+    this.game.world.setBounds(0, 0, 128*20, 128*20);
+
     // Move on to the preload state.
     this.game.state.start('Preload');
   }
